@@ -17,7 +17,8 @@ export async function POST(req) {
 
     // Email content
     const mailOptions = {
-      from: process.env.SMTP_FROM,
+      from: `${firstname} ${lastname} <${email}>`,
+      sender: process.env.SMTP_FROM,
       to: process.env.SMTP_TO,
       subject: `New Contact Form Submission from ${firstname} ${lastname}`,
       text: `Name: ${firstname} ${lastname}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`,
