@@ -13,36 +13,65 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 
   const projects=   
       [
+        
         {
           num: "01",
           title: "Frontend",
-          category: "Project 1",
-          description: "A responsive website built using HTML5, CSS3, and JavaScript, featuring modern design principles and user-friendly navigation. It demonstrates basic frontend development skills, including layout, styling, and interactivity.",
-          stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-          image: "/assets/work/img2.jpg", 
-          live: " ", 
-          github: " "
-        },
-        {
-          num: "02",
-          title: "Fullstack",
-          category: "Project 2",
-          description: "A full-stack web application utilizing Next.js for server-side rendering, Node.js for backend logic, and Tailwind CSS for responsive design. The project demonstrates integration between frontend and backend with a focus on performance and scalability.",
-          stack: [{ name: "Next.js" }, { name: "CSS 3" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-          image: "/assets/work/img3.jpg", 
-          live: " ", 
-          github: " "
-        },
-        {
-          num: "03",
-          title: "Frontend",
-          category: "Project 3",
+          category: "Village Hub",
           description: "A modern frontend application developed with Next.js and styled using Tailwind CSS. This project focuses on creating a highly interactive user interface with clean and reusable code.",
           stack: [{ name: "Next.js" }, { name: "CSS 3" }, { name: "Tailwind.css" }],
           image: "/assets/work/img4.jpg", 
           live: " ", 
-          github: " ",
-        }
+          github: "https://github.com/k-i-b-i-wott/telemed",
+        },
+        {
+          num: "02",
+          title: "VeryDorm",
+          category: "Real Estate Website",
+          description: "VeryDorm is a modern real estate platform for listing and finding dormitories and apartments. Built with React and Material-UI for a sleek UI, Node.js (Express) for the backend, and Firestore for real-time data storage. Features include property search, user authentication, and secure messaging between tenants and landlords.",
+          stack: [
+            { name: "React" },
+            { name: "Javascript" },
+            { name: "Material-UI" },
+            { name: "Node.js (Express)" },
+            { name: "Firestore" }
+          ],
+          image: "/assets/work/verydorm.png",
+          live: "https://verydorm.com",
+          github: "https://github.com/k-i-b-i-wott/VeryDorm"
+        },
+        {
+          num: "03",
+          title: "Remote Doctor",
+          category: "Doctor Consultation & E-Prescription",
+          description: "A remote doctor consultation and e-prescription web application built with React for the frontend, Material-UI for a modern and accessible UI, and Node.js for backend services. The platform enables patients to consult with doctors online, receive digital prescriptions, and manage appointments securely.",
+          stack: [
+            { name: "React" },
+            { name: "Typescript" },
+            { name: "Material-UI" },
+            { name: "Node.js" }
+          ],
+          image: "/assets/work/img.png",
+          live: "/ ",
+          github: "https://github.com/k-i-b-i-wott/telemed"
+        },
+        {
+          num: "04",
+          title: "BlogIt",
+          category: "Blog Application",
+          description: "A full-featured blog application built with React and TypeScript for the frontend, styled with Material-UI, and powered by a Node.js (Express) backend with PostgreSQL for robust data storage. Features include user authentication, post creation/editing, comments, and responsive design.",
+          stack: [
+            { name: "React" },
+            { name: "TypeScript" },
+            { name: "Material-UI" },
+            { name: "Node.js" },
+            { name: "Express" },
+            { name: "PostgreSQL" }
+          ],
+          image: "/assets/work/img2.jpg",
+          live: "https://blogit-front-end-eesk.vercel.app/",
+          github: "https://github.com/k-i-b-i-wott/BlogitFrontEnd"
+        },
   ];
 
 const Work= () => {
