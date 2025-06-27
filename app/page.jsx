@@ -3,8 +3,13 @@ import Social from "@/components/Social"
 import Stats from "@/components/Stats"
 import { Button } from "@/components/ui/button"
 import{ FiDownload} from "react-icons/fi"
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    fetch("/api/notify");
+  }, []);
+
   return (
     <section className="h-full">
        <div className="container mx-auto">
