@@ -51,8 +51,8 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
             { name: "Material-UI" },
             { name: "Node.js" }
           ],
-          image: "/assets/work/img.png",
-          live: "/ ",
+          image: "/assets/work/telemed.png",
+          live: "https://telemed-seven.vercel.app/",
           github: "https://github.com/k-i-b-i-wott/telemed"
         },
         {
@@ -68,7 +68,7 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
             { name: "Express" },
             { name: "PostgreSQL" }
           ],
-          image: "/assets/work/img2.jpg",
+          image: "/assets/work/blogit.png",
           live: "https://blogit-front-end-eesk.vercel.app/",
           github: "https://github.com/k-i-b-i-wott/BlogitFrontEnd"
         },
