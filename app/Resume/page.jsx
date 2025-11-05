@@ -69,38 +69,38 @@ const experience={
 }
 const education={
   icon:'',
-  title:"My Experience",
+  title:"Education",
   description:"",
   items:[
     {
-      institution:"Online Course Platform",
-      degree:"Web Development BootCamp",
-      duration:"2023",
+      institution:"Dedan Kimathi University of Technology, Nyeri, Kenya",
+      degree:"Bachelor of Science in Information Technology",
+      duration:"",
     },
     {
-      institution:"CodeAcademy",
-      degree:"Front-End development",
-      duration:"2022",
+      institution:"EmobilisKenya Educators, Remote",
+      degree:"Certificate in Software Development",
+      duration:"",
     },
     {
-      institution:"Online Course",
-      degree:"Programming Course",
-      duration:"2021-2022",
+      institution:"Teach2Give Academy, Nyeri, Kenya",
+      degree:"Certificate in Software Engineering",
+      duration:"",
     },
     {
-      institution:"Tech Institute",
-      degree:"Certified Web developer",
-      duration:"2020",
+      institution:"Teach2Give Educators, Nyeri, Kenya",
+      degree:"Certificate in Quality Assurance & Quality Engineering",
+      duration:"",
     },
     {
-      institution:"Design School",
-      degree:"Diploma in Graphic design",
-      duration:"2019",
+      institution:"CyberShujaa",
+      degree:"Microsoft ADC Software Security Specialist",
+      duration:"",
     },
     {
-      institution:"Community College",
-      degree:"Diploma in Computer Science",
-      duration:"2018-2019",
+      institution:"Atlassian University",
+      degree:"Atlassian Agile Project Management Professional Certificate",
+      duration:"",
     },
 
   ]  
@@ -297,13 +297,13 @@ const Resume = () => {
                                   <Tooltip>
                                       <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center">
                                     {(() => { const Icon = skill.Icon; return Icon ? (
-                                      <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                        <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                         <Icon />
                                       </div>
                                     ) : (
                                       <div className="text-base px-4 text-center text-white/80">
                                         {skill.name}
-                                      </div>
+                                        </div>
                                     ); })()}
                                       </TooltipTrigger>
                                       <TooltipContent>
