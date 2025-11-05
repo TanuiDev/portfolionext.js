@@ -28,7 +28,7 @@ const Photo = () => {
                      className="w-[150px] h-[150px] xl:w-[300px]  xl:h-[300px] mix-blend-lighten absolute rounded-full">
 
 
-                                <Image  src="/assets/bb.png" priority quality={100} fill
+                                <Image  src="/assets/bb.jpg" priority quality={100} fill
                                     alt="Image" className="object-contain"
                              />
            </motion.div>
