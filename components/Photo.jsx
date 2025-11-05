@@ -25,11 +25,11 @@ const Photo = () => {
                     ease:"easeOut"
                     }
                     }}
-                     className="w-[150px] h-[150px] xl:w-[300px]  xl:h-[300px] mix-blend-lighten absolute rounded-full">
+                    className="w-[150px] h-[150px] xl:w-[300px]  xl:h-[300px] mix-blend-lighten absolute rounded-full overflow-hidden">
 
 
-                                <Image  src="/assets/bb.jpg" priority quality={100} fill
-                                    alt="Image" className="object-contain"
+                               <Image  src="/assets/bb.jpg" priority quality={100} fill
+                                    alt="Image" className="object-cover"
                              />
            </motion.div>
 
