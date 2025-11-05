@@ -151,56 +151,56 @@ const skills={
 }
 const skillsByCategory={
   Languages:[
-    { icon:<FaJs/>, name:"JavaScript" },
-    { icon:<SiTypescript/>, name:"TypeScript" },
-    { icon:<FaPython/>, name:"Python" },
-    { icon:<SiCsharp/>, name:"C#" },
-    { icon:<FaJava/>, name:"Java" },
+    { Icon:FaJs, name:"JavaScript" },
+    { Icon:SiTypescript, name:"TypeScript" },
+    { Icon:FaPython, name:"Python" },
+    { Icon:SiCsharp, name:"C#" },
+    { Icon:FaJava, name:"Java" },
   ],
   "Frameworks & Libraries":[
-    { icon:<FaNodeJs/>, name:"Node.js" },
-    { icon:<SiExpress/>, name:"Express.js" },
-    { icon:<SiNestjs/>, name:"Nest.js" },
-    { icon:<SiNextdotjs/>, name:"Next.js" },
-    { icon:<FaReact/>, name:"React.js" },
-    { icon:<SiDjango/>, name:"Django" },
+    { Icon:FaNodeJs, name:"Node.js" },
+    { Icon:SiExpress, name:"Express.js" },
+    { Icon:SiNestjs, name:"Nest.js" },
+    { Icon:SiNextdotjs, name:"Next.js" },
+    { Icon:FaReact, name:"React.js" },
+    { Icon:SiDjango, name:"Django" },
   ],
   "Testing & QA":[
-    { icon:<SiJest/>, name:"Jest" },
-    { icon:<SiMocha/>, name:"Mocha" },
-    { icon:<SiCypress/>, name:"Cypress" },
-    { icon:<SiSelenium/>, name:"Selenium WebDriver" },
-    { icon:<SiPostman/>, name:"Postman" },
-    { icon:<SiJunit/>, name:"JUnit" },
-    { icon:<SiCucumber/>, name:"Cucumber" },
+    { Icon:SiJest, name:"Jest" },
+    { Icon:SiMocha, name:"Mocha" },
+    { Icon:SiCypress, name:"Cypress" },
+    { Icon:SiSelenium, name:"Selenium WebDriver" },
+    { Icon:SiPostman, name:"Postman" },
+    { Icon:SiJunit, name:"JUnit" },
+    { Icon:SiCucumber, name:"Cucumber" },
   ],
   "Performance & Security":[
-    { icon:null, name:"JMeter" },
-    { icon:null, name:"LoadRunner" },
-    { icon:<SiOwasp/>, name:"OWASP ZAP" },
-    { icon:<SiJest/>, name:"Jest" },
+    { Icon:null, name:"JMeter" },
+    { Icon:null, name:"LoadRunner" },
+    { Icon:SiOwasp, name:"OWASP ZAP" },
+    { Icon:SiJest, name:"Jest" },
   ],
   Databases:[
-    { icon:<SiMicrosoftsqlserver/>, name:"SQL Server" },
-    { icon:<SiMongodb/>, name:"MongoDB" },
-    { icon:<SiPostgresql/>, name:"PostgreSQL" },
+    { Icon:SiMicrosoftsqlserver, name:"SQL Server" },
+    { Icon:SiMongodb, name:"MongoDB" },
+    { Icon:SiPostgresql, name:"PostgreSQL" },
   ],
   "Automation & CI/CD":[
-    { icon:<SiJenkins/>, name:"Jenkins" },
-    { icon:<SiGithubactions/>, name:"GitHub Actions" },
-    { icon:<SiGitlab/>, name:"GitLab CI" },
-    { icon:<SiDocker/>, name:"Docker" },
-    { icon:<SiKubernetes/>, name:"Kubernetes" },
+    { Icon:SiJenkins, name:"Jenkins" },
+    { Icon:SiGithubactions, name:"GitHub Actions" },
+    { Icon:SiGitlab, name:"GitLab CI" },
+    { Icon:SiDocker, name:"Docker" },
+    { Icon:SiKubernetes, name:"Kubernetes" },
   ],
   Cloud:[
-    { icon:<SiAmazonaws/>, name:"AWS" },
-    { icon:<SiMicrosoftazure/>, name:"Microsoft Azure" },
+    { Icon:SiAmazonaws, name:"AWS" },
+    { Icon:SiMicrosoftazure, name:"Microsoft Azure" },
   ],
   Methodologies:[
-    { icon:null, name:"Agile (Scrum/Kanban)" },
-    { icon:null, name:"Waterfall" },
-    { icon:null, name:"TDD" },
-    { icon:null, name:"BDD" },
+    { Icon:null, name:"Agile (Scrum/Kanban)" },
+    { Icon:null, name:"Waterfall" },
+    { Icon:null, name:"TDD" },
+    { Icon:null, name:"BDD" },
   ],
 }
 import { Tabs, TabsContent, TabsTrigger,TabsList } from "@/components/ui/tabs";
@@ -296,15 +296,15 @@ const Resume = () => {
                                <TooltipProvider delayDuration={100}>
                                   <Tooltip>
                                       <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center">
-                                    {skill.icon ? (
-                                        <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                          {skill.icon}
-                                        </div>
+                                    {(() => { const Icon = skill.Icon; return Icon ? (
+                                      <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                        <Icon />
+                                      </div>
                                     ) : (
                                       <div className="text-base px-4 text-center text-white/80">
                                         {skill.name}
                                       </div>
-                                    )}
+                                    ); })()}
                                       </TooltipTrigger>
                                       <TooltipContent>
                                     <div className="capitalize">{skill.name}</div>
