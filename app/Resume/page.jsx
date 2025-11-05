@@ -2,7 +2,7 @@
 "use client";
 
 import { FaHtml5,  FaCss3, FaNodeJs , FaReact,FaPython,FaJava,FaJs,FaFigma } from "react-icons/fa";
-import {SiTailwindcss,SiNextdotjs}from "react-icons/si";
+import {SiTailwindcss,SiNextdotjs, SiExpress, SiTypescript, SiJest, SiCypress, SiMongodb, SiPostgresql, SiMicrosoftsqlserver, SiNestjs, SiDjango, SiSelenium, SiPostman, SiJunit, SiCucumber, SiJenkins, SiGithubactions, SiGitlab, SiDocker, SiKubernetes, SiAmazonaws, SiMicrosoftazure, SiMocha, SiOwasp, SiCsharp}from "react-icons/si";
 
 // about data
 
@@ -25,12 +25,9 @@ const about=
     },
     {
       fielName:"Experience",
-      fieldValue:"5+ Years",
+      fieldValue:"2 Years",
     },
-    {
-      fielName:"Skype",
-      fieldValue:"Biwott.1",
-    },
+   
     {
       fielName:"Natinality",
       fieldValue:"Kenyan",
@@ -45,7 +42,7 @@ const about=
     },
     {
       fielName:"Languages",
-      fieldValue:"English, Spanish, French",
+      fieldValue:"English",
     },
   ]
 
@@ -58,34 +55,14 @@ const experience={
 
   items:[
     {
-      company:"Tech Solutions Inc.",
-      position:"Full Stack Developer",
-      duration:"2023 - Present",
+      company:"Teach2Give",
+      position:"Software Engineer Intern",
+      duration:"Feb - May 2025",
     },
     {
-      company:"Web Design Studio",
-      position:"Front End  Developer",
-      duration:"2023",
-    },
-    {
-      company:"E-commerce Startup",
-      position:"Freelance Web Developer",
-      duration:"Summer 2022",
-    },
-    {
-      company:"Tech Academy",
-      position:"Teaching Asissitant",
-      duration:"2021 - Summer 2022",
-    },
-    {
-      company:"Digital Agency",
-      position:"UI/UX Designer",
-      duration:"2020",
-    },
-    {
-      company:"Sofware Development Firm",
-      position:"Junior Sofware Developer",
-      duration:"2019-2020",
+      company:"Teach2Give",
+      position:"Quality Assurance Engineering Trainee",
+      duration:"Sep - Dec 2025",
     },
 
   ]
@@ -130,49 +107,101 @@ const education={
 }
 const skills={
   title:"My Skills",
-  description:"Here are some of the technologies and tools I'm proficient in:",
+  description:"Here are technologies and tools I work with across development, QA, DevOps, and cloud:",
   skillList:[
-    {
-      icon:<FaHtml5/> ,
-      name:"Html 5",
-    },
-    {
-      icon:<FaCss3/> ,
-      name:"Css 3",
-    },
-    {
-      icon: <FaNodeJs/>,
-      name:"NodeJs",
-    },
-    {
-      icon:<FaFigma/> ,
-      name:"Figma",
-    },
-    {
-      icon:<FaReact/> ,
-      name:"ReactJs",
-    },
-    {
-      icon:<FaJs/> ,
-      name:"JavaScript",
-    },
-    {
-      icon:<FaJava/> ,
-      name:"Java",
-    },
-    {
-      icon: <FaPython/>,
-      name:"Python",
-    },
-    {
-      icon:<SiTailwindcss/>,
-      name:"TailwindCss",
-    },
-    {
-      icon:<SiNextdotjs/> ,
-      name:"Next.js",
-    },
+    { icon:<FaReact/>, name:"React.js" },
+    { icon:<FaNodeJs/>, name:"Node.js" },
+    { icon:<SiExpress/>, name:"Express.js" },
+    { icon:<SiNestjs/>, name:"Nest.js" },
+    { icon:<SiNextdotjs/>, name:"Next.js" },
+
+    { icon:<FaJs/>, name:"JavaScript" },
+    { icon:<SiTypescript/>, name:"TypeScript" },
+    { icon:<FaPython/>, name:"Python" },
+    { icon:<SiCsharp/>, name:"C#" },
+    { icon:<FaJava/>, name:"Java" },
+
+    { icon:<SiJest/>, name:"Jest" },
+    { icon:<SiMocha/>, name:"Mocha" },
+    { icon:<SiCypress/>, name:"Cypress" },
+    { icon:<SiSelenium/>, name:"Selenium WebDriver" },
+    { icon:<SiPostman/>, name:"Postman" },
+    { icon:<SiJunit/>, name:"JUnit" },
+    { icon:<SiCucumber/>, name:"Cucumber" },
+    { icon:<SiOwasp/>, name:"OWASP ZAP" },
+
+    { icon:<SiMicrosoftsqlserver/>, name:"SQL Server" },
+    { icon:<SiMongodb/>, name:"MongoDB" },
+    { icon:<SiPostgresql/>, name:"PostgreSQL" },
+
+    { icon:<SiJenkins/>, name:"Jenkins" },
+    { icon:<SiGithubactions/>, name:"GitHub Actions" },
+    { icon:<SiGitlab/>, name:"GitLab CI" },
+    { icon:<SiDocker/>, name:"Docker" },
+    { icon:<SiKubernetes/>, name:"Kubernetes" },
+
+    { icon:<SiAmazonaws/>, name:"AWS" },
+    { icon:<SiMicrosoftazure/>, name:"Microsoft Azure" },
+
+    { icon:<FaHtml5/>, name:"HTML5" },
+    { icon:<FaCss3/>, name:"CSS3" },
+    { icon:<SiTailwindcss/>, name:"Tailwind CSS" },
+    { icon:<FaFigma/>, name:"Figma" },
   ]
+}
+const skillsByCategory={
+  Languages:[
+    { icon:<FaJs/>, name:"JavaScript" },
+    { icon:<SiTypescript/>, name:"TypeScript" },
+    { icon:<FaPython/>, name:"Python" },
+    { icon:<SiCsharp/>, name:"C#" },
+    { icon:<FaJava/>, name:"Java" },
+  ],
+  "Frameworks & Libraries":[
+    { icon:<FaNodeJs/>, name:"Node.js" },
+    { icon:<SiExpress/>, name:"Express.js" },
+    { icon:<SiNestjs/>, name:"Nest.js" },
+    { icon:<SiNextdotjs/>, name:"Next.js" },
+    { icon:<FaReact/>, name:"React.js" },
+    { icon:<SiDjango/>, name:"Django" },
+  ],
+  "Testing & QA":[
+    { icon:<SiJest/>, name:"Jest" },
+    { icon:<SiMocha/>, name:"Mocha" },
+    { icon:<SiCypress/>, name:"Cypress" },
+    { icon:<SiSelenium/>, name:"Selenium WebDriver" },
+    { icon:<SiPostman/>, name:"Postman" },
+    { icon:<SiJunit/>, name:"JUnit" },
+    { icon:<SiCucumber/>, name:"Cucumber" },
+  ],
+  "Performance & Security":[
+    { icon:null, name:"JMeter" },
+    { icon:null, name:"LoadRunner" },
+    { icon:<SiOwasp/>, name:"OWASP ZAP" },
+    { icon:<SiJest/>, name:"Jest" },
+  ],
+  Databases:[
+    { icon:<SiMicrosoftsqlserver/>, name:"SQL Server" },
+    { icon:<SiMongodb/>, name:"MongoDB" },
+    { icon:<SiPostgresql/>, name:"PostgreSQL" },
+  ],
+  "Automation & CI/CD":[
+    { icon:<SiJenkins/>, name:"Jenkins" },
+    { icon:<SiGithubactions/>, name:"GitHub Actions" },
+    { icon:<SiGitlab/>, name:"GitLab CI" },
+    { icon:<SiDocker/>, name:"Docker" },
+    { icon:<SiKubernetes/>, name:"Kubernetes" },
+  ],
+  Cloud:[
+    { icon:<SiAmazonaws/>, name:"AWS" },
+    { icon:<SiMicrosoftazure/>, name:"Microsoft Azure" },
+  ],
+  Methodologies:[
+    { icon:null, name:"Agile (Scrum/Kanban)" },
+    { icon:null, name:"Waterfall" },
+    { icon:null, name:"TDD" },
+    { icon:null, name:"BDD" },
+  ],
 }
 import { Tabs, TabsContent, TabsTrigger,TabsList } from "@/components/ui/tabs";
 import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from "@/components/ui/tooltip";
@@ -251,28 +280,43 @@ const Resume = () => {
                       <h3 className="text-4xl font-bold">{skills.title}</h3>
                       <p className="mx-w[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                     </div>
+                  <Tabs defaultValue="Languages" className="flex flex-col gap-[30px]">
+                    <TabsList className="flex flex-wrap gap-2 w-full max-w-full">
+                      {Object.keys(skillsByCategory).map((category)=> (
+                        <TabsTrigger key={category} value={category} className="capitalize">
+                          {category}
+                        </TabsTrigger>
+                      ))}
+                    </TabsList>
+                    {Object.entries(skillsByCategory).map(([category, items])=> (
+                      <TabsContent key={category} value={category} className="w-full">
                     <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
-                      {skills.skillList.map((skill,index)=>{
-                        return(
+                          {items.map((skill,index)=> (
                               <li key={index}>
                                <TooltipProvider delayDuration={100}>
                                   <Tooltip>
                                       <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center">
+                                    {skill.icon ? (
                                         <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                           {skill.icon}
                                         </div>
+                                    ) : (
+                                      <div className="text-base px-4 text-center text-white/80">
+                                        {skill.name}
+                                      </div>
+                                    )}
                                       </TooltipTrigger>
                                       <TooltipContent>
-                                          <div className="capitalize">
-                                            {skill.name}
-                                          </div>
+                                    <div className="capitalize">{skill.name}</div>
                                       </TooltipContent>
                                   </Tooltip>
                                </TooltipProvider>
                               </li>
-                        );
-                      })}
+                          ))}
                     </ul>
+                      </TabsContent>
+                    ))}
+                  </Tabs>
                 </div>
             </TabsContent>
             <TabsContent value="about" className="w-full text-center xl:text-center">
