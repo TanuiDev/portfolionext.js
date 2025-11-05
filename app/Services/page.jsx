@@ -7,26 +7,26 @@ import Link from "next/link";
 const services = [
   {
     num: '01',
-    title: 'Web Development',
-    description: 'Custom websites built with the latest technologies, tailored to your needs.',
+    title: 'Backend Development',
+    description: 'Robust APIs and services with Node.js, Express/Nest.js, SQL & NoSQL databases, auth, caching, and cloud-ready deployments.',
     href: ""
   },
   {
     num: '02',
-    title: 'UI/UX Design',
-    description: 'Creating intuitive and aesthetically pleasing designs for a seamless user experience.',
+    title: 'Frontend Development',
+    description: 'Responsive, accessible UIs with React/Next.js, TypeScript, Tailwind CSS, and best UX practices.',
     href: ""
   },
   {
     num: '03',
-    title: 'Logo Design',
-    description: 'Unique and creative logos that define your brand identity and make an impact.',
+    title: 'Full-Stack Development',
+    description: 'End‑to‑end solutions from database to UI, CI/CD, testing, monitoring, and performance optimization.',
     href: ""
   },
   {
     num: '04',
-    title: 'SEO',
-    description: 'Improve your website’s ranking on search engines with our expert SEO services.',
+    title: 'Quality Assurance Engineering',
+    description: 'Automated testing with Jest, Cypress, Selenium, API tests with Postman/Newman, and QA/process improvements.',
     href: ""
   }
 ];
